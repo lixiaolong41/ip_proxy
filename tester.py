@@ -1,5 +1,5 @@
-from ip_proxy.setting import *
-from ip_proxy.storage import RedisClient
+from setting import *
+from storage import RedisClient
 import asyncio
 import aiohttp
 import uvloop
@@ -56,6 +56,7 @@ class Tester(object):
                 time.sleep(5)
         except Exception as e:
             print("检测器发生错误", e)
+
 
 if __name__ == "__main__":
     tester = Tester()

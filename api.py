@@ -1,5 +1,5 @@
 from flask import Flask, g
-from ip_proxy.storage import RedisClient
+from storage import RedisClient
 
 __all__ = ['app']
 app = Flask(__name__)
